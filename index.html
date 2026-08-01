@@ -1,0 +1,1251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Brenwick — confidential diligence and conditional underwriting." />
+    <title>Brenwick</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-header__logo" href="#home" aria-label="Brenwick home">
+                <img src="assets/icons/brenwick-logo.svg" alt="Brenwick" width="124" height="25" />
+            </a>
+
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a class="desktop-nav__link" href="#home" aria-current="page">
+                    Home
+                </a>
+                <a class="desktop-nav__link" href="article/">Approach</a>
+                <a class="desktop-nav__link" href="#when-to-use-brenwick">
+                    When to use Brenwick
+                </a>
+                <a class="desktop-nav__link" href="wh/">Who signs</a>
+                <a class="desktop-nav__link" href="research/">Research</a>
+            </nav>
+
+            <a class="button button--header" href="#contact">
+                Book a confidential diligence call
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu"
+                aria-expanded="false">
+                <span class="menu-toggle__line menu-toggle__line--top"></span>
+                <span class="menu-toggle__line menu-toggle__line--bottom"></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+            <div class="mobile-menu__pattern" aria-hidden="true"></div>
+
+            <div class="mobile-menu__content">
+                <nav class="mobile-nav" aria-label="Mobile navigation">
+                    <a class="mobile-nav__link" href="#home" aria-current="page">
+                        Home
+                    </a>
+                    <a class="mobile-nav__link" href="#approach">Approach</a>
+                    <a class="mobile-nav__link" href="#when-to-use-brenwick">
+                        When to use Brenwick
+                    </a>
+                    <a class="mobile-nav__link" href="#who-signs">Who signs</a>
+                    <a class="mobile-nav__link" href="research/">Research</a>
+                </nav>
+
+                <a class="button button--mobile-menu" href="#contact">
+                    Book a confidential diligence call
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__pattern" aria-hidden="true"></div>
+
+            <div class="hero__content">
+                <p class="hero__eyebrow">
+                    <span class="hero__eyebrow-marker" aria-hidden="true"></span>
+                    Conditional underwriting
+                </p>
+
+                <h1 class="hero__title" id="hero-title">
+                    The forecast is<br class="mobile-line-break" />
+                    one possible<br />
+                    future.<br class="mobile-line-break" />
+                    Underwrite what<br />
+                    must be true for<br class="mobile-line-break" />
+                    it to<br class="desktop-line-break" />
+                    happen.
+                </h1>
+
+                <img class="hero__arrow" src="assets/icons/hero-arrow.svg" alt="" width="65" height="64"
+                    aria-hidden="true" />
+
+                <p class="hero__description">
+                    A plan can be coherent, carefully built, and<br class="mobile-line-break" />
+                    still describe<br class="desktop-line-break" />
+                    only one path. Brenwick makes<br class="mobile-line-break" />
+                    the uncertainty around<br class="desktop-line-break" />
+                    that path explicit, so<br class="mobile-line-break" />
+                    the investor can examine the range<br class="desktop-line-break" />
+                    and the<br class="mobile-line-break" />
+                    conditions it implies.
+                </p>
+            </div>
+        </section>
+
+        <section class="forecast-figure" id="approach" aria-labelledby="forecast-figure-title">
+            <header class="forecast-figure__header">
+                <p>Figure 1</p>
+                <p>Conditional underwriting</p>
+            </header>
+
+            <div class="forecast-figure__body">
+                <div class="forecast-figure__intro">
+                    <h2 id="forecast-figure-title">
+                        One path among many
+                    </h2>
+                    <p>
+                        Monthly revenue, € thousands · one line per
+                        simulated future
+                    </p>
+                </div>
+
+                <div class="forecast-figure__legend" aria-hidden="true">
+                    <span class="forecast-figure__legend-item">
+                        <span class="forecast-figure__legend-line forecast-figure__legend-line--founder"></span>
+                        Founder forecast
+                    </span>
+                    <span class="forecast-figure__legend-item text-color">
+                        <span class="forecast-figure__legend-line forecast-figure__legend-line--median"></span>
+                        Model median
+                    </span>
+                </div>
+
+                <div class="forecast-figure__chart forecast-figure__chart--desktop">
+                    <svg viewBox="0 0 1120 334" role="img"
+                        aria-labelledby="desktop-chart-title desktop-chart-description">
+                        <title id="desktop-chart-title">
+                            Monthly revenue forecast paths
+                        </title>
+                        <desc id="desktop-chart-description">
+                            Founder forecast compared with the median of
+                            ten thousand simulated revenue paths from
+                            August 2026 to November 2027.
+                        </desc>
+
+                        <g class="forecast-chart__grid">
+                            <line x1="40" y1="2" x2="934" y2="2" />
+                            <line x1="40" y1="140" x2="934" y2="140" />
+                            <line x1="40" y1="278" x2="934" y2="278" />
+                        </g>
+
+                        <g class="forecast-chart__paths">
+                            <path d="M40 242 C190 230 330 222 470 205 S760 168 934 135" />
+                            <path d="M40 242 C190 235 330 229 470 220 S760 205 934 194" />
+                            <path d="M40 242 C190 232 330 224 470 214 S760 190 934 170" />
+                            <path d="M40 242 C190 238 330 232 470 225 S760 215 934 210" />
+                            <path d="M40 242 C190 234 330 221 470 210 S760 186 934 160" />
+                            <path d="M40 242 C190 239 330 234 470 229 S760 218 934 203" />
+                            <path d="M40 242 C190 231 330 223 470 217 S760 198 934 181" />
+                            <path d="M40 242 C190 236 330 228 470 219 S760 203 934 188" />
+                            <path d="M40 242 C190 237 330 231 470 226 S760 212 934 198" />
+                            <path d="M40 242 C190 233 330 224 470 211 S760 183 934 153" />
+                        </g>
+
+                        <path class="forecast-chart__median" d="M40 242 C220 235 380 224 530 211 S790 184 934 169" />
+                        <path class="forecast-chart__founder"
+                            d="M40 242 C225 230 390 213 552 181 C705 151 824 107 934 45" />
+
+                        <g class="forecast-chart__ticks">
+                            <text x="0" y="7">40</text>
+                            <text x="0" y="145">20</text>
+                            <text x="8" y="283">0</text>
+
+                            <text x="40" y="310" text-anchor="middle">
+                                Aug 26
+                            </text>
+                            <text x="198" y="310" text-anchor="middle">
+                                Nov 26
+                            </text>
+                            <text x="356" y="310" text-anchor="middle">
+                                Feb 27
+                            </text>
+                            <text x="514" y="310" text-anchor="middle">
+                                May 27
+                            </text>
+                            <text x="672" y="310" text-anchor="middle">
+                                Aug 27
+                            </text>
+                            <text x="830" y="310" text-anchor="middle">
+                                Nov 27
+                            </text>
+                        </g>
+
+                        <g class="forecast-chart__annotations">
+                            <line x1="934" y1="45" x2="950" y2="45" />
+                            <text x="956" y="34">Founder</text>
+                            <text x="956" y="52">forecast</text>
+
+                            <line x1="934" y1="194" x2="950" y2="194" />
+                            <text x="956" y="186">Model</text>
+                            <text x="956" y="204">median</text>
+
+                            <text x="956" y="259">10,000</text>
+                            <text x="956" y="277">paths</text>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="forecast-figure__chart forecast-figure__chart--mobile">
+                    <svg viewBox="0 0 282 214" role="img" aria-labelledby="mobile-chart-title mobile-chart-description">
+                        <title id="mobile-chart-title">
+                            Monthly revenue forecast paths
+                        </title>
+                        <desc id="mobile-chart-description">
+                            Founder forecast compared with simulated
+                            revenue paths from August 2026 to January 2028.
+                        </desc>
+
+                        <g class="forecast-chart__grid" transform="scale(1 1.1)">
+                            <line x1="22" y1="3" x2="281" y2="3" />
+                            <line x1="22" y1="83" x2="281" y2="83" />
+                            <line x1="22" y1="163" x2="281" y2="163" />
+                        </g>
+
+                        <image href="assets/images/forecast-paths-mobile.svg" x="22" y="31" width="260" height="139"
+                            preserveAspectRatio="xMidYMid meet" aria-hidden="true" />
+
+                        <g class="forecast-chart__ticks">
+                            <text x="0" y="7">40</text>
+                            <text x="0" y="95">20</text>
+                            <text x="7" y="183">0</text>
+
+                            <text x="22" y="202" text-anchor="middle">
+                                Aug 26
+                            </text>
+                            <text x="108" y="202" text-anchor="middle">
+                                Feb 27
+                            </text>
+                            <text x="195" y="202" text-anchor="middle">
+                                Aug 27
+                            </text>
+                            <text x="281" y="202" text-anchor="end">
+                                Jan 28
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <footer class="forecast-figure__footer">
+                <p>underwrite what must be true.</p>
+                <p class="forecast-figure__brand">brenwick</p>
+            </footer>
+        </section>
+
+        <section class="range-section" aria-labelledby="range-section-title">
+            <header class="range-section__header">
+                <p class="range-section__figure-label">
+                    Figure 1 - One possible path
+                </p>
+
+                <p class="range-section__figure-description">
+                    Future fan chart: founder forecast against the plausible paths implied by the model.
+                </p>
+
+                <p class="range-section__specimen">
+                    SPECIMEN · Demo company
+                </p>
+            </header>
+
+            <div class="mobile-horizontal-divider" aria-hidden="true"></div>
+            <div class="range-section__question">
+                <p>
+                    The first question is not whether the forecast is right. It is where that forecast sits among the
+                    outcomes its own assumptions allow.
+                </p>
+            </div>
+            <div class="mobile-horizontal-divider" aria-hidden="true"></div>
+            <div class="range-section__content">
+                <div class="range-section__heading-group">
+                    <p class="range-section__eyebrow">
+                        <span aria-hidden="true"></span>
+                        The range
+                    </p>
+
+                    <h2 id="range-section-title">
+                        A range turns the forecast into a <br class="mobile-line-break"/> claim you can <br class="mobile-line-break"/> examine.
+                    </h2>
+                </div>
+
+                <div class="range-section__copy">
+                    <p>
+                        Brenwick rebuilds the plan with explicit uncertainty and runs the company across 10,000
+                        plausible futures.
+                    </p>
+                    <p>
+                        The result is not a replacement forecast. It is a reading of where the plan sits, how wide the
+                        outcome range is, and which downside the single line leaves invisible.
+                    </p>
+                </div>
+            </div>
+            <div class="mobile-horizontal-divider" aria-hidden="true"></div>
+            <blockquote class="range-section__quote">
+                <p>“We already discount forecasts.”</p>
+                <footer>
+                    The first question is not whether the forecast is right. It is where that forecast sits among the
+                    outcomes its own assumptions allow.
+                </footer>
+            </blockquote>
+            <div class="mobile-horizontal-divider" aria-hidden="true"></div>
+        </section>
+
+        <section class="range-exhibit" aria-labelledby="range-exhibit-title">
+            <header class="range-exhibit__header">
+                <p>Exhibit 1</p>
+                <p>The range</p>
+            </header>
+
+            <div class="range-exhibit__body">
+                <div class="range-exhibit__intro">
+                    <h2 id="range-exhibit-title">Where the <br class="mobile-line-break" />forecast sits</h2>
+                    <p class="mobile-line-break">Terminal revenue · 10,000 runs</p>
+                    <p class="desktop-line-break">The plan sits in the right tail of its own model</p>
+                </div>
+
+                <div class="range-exhibit__chart range-exhibit__chart--desktop">
+
+                    <svg viewBox="0 0 790 370" role="img" aria-labelledby="range-chart-title range-chart-description">
+                        <title id="range-chart-title">
+                            Terminal monthly revenue distribution
+                        </title>
+                        <desc id="range-chart-description">
+                            The model median is 16.4 thousand euros. The founder
+                            forecast sits at the 92nd percentile of the model.
+                        </desc>
+
+                        <g class="range-exhibit__model-label">
+                            <text x="228" y="8">Model median</text>
+                            <text x="228" y="26">€16.4k</text>
+                        </g>
+
+                        <g class="range-exhibit__founder-label">
+                            <text x="509" y="1">Founder forecast</text>
+                            <text x="509" y="19">92nd percentile of the model</text>
+                        </g>
+
+                        <g class="range-exhibit__histogram-bars" transform="translate(10 0)" aria-hidden="true">
+                            <path d="M36 273.5V307.5
+           M72 157.5V307.5
+           M108 71.5V307.5
+           M144 47.5V307.5
+           M180 64.5V307.5
+           M216 97.5V307.5
+           M252 134.5V307.5
+           M288 169.5V307.5
+           M324 200.5V307.5
+           M360 222.5V307.5
+           M396 239.5V307.5
+           M432 254.5V307.5
+           M468 267.5V307.5
+           M504 279.5V307.5
+           M540 289.5V307.5
+           M576 295.5V307.5
+           M612 299.5V307.5
+           M648 299.5V307.5
+           M684 303.5V307.5
+           M720 305.5V307.5
+           M756 306.5V307.5" />
+                        </g>
+                        <g class="range-exhibit__distribution" aria-hidden="true">
+                            <image class="range-exhibit__distribution-image range-exhibit__distribution-image--desktop"
+                                href="assets/images/range-distribution-desktop.svg" x="0" y="46.8" width="790"
+                                height="262" preserveAspectRatio="none" />
+
+                        </g>
+                        <line class="range-exhibit__baseline" x1="0" y1="307.5" x2="790" y2="307.5" />
+                        <line class="range-exhibit__median-line" x1="217.4" y1="33.5" x2="217.4" y2="307.5" />
+
+                        <line class="range-exhibit__axis-tick" x1="99" y1="307.5" x2="99" y2="316.5" />
+
+                        <line class="range-exhibit__axis-tick" x1="462" y1="307.5" x2="462" y2="316.5" />
+                        <g class="range-exhibit__founder-marker" aria-hidden="true">
+                            <line x1="498.7" y1="3.5" x2="498.7" y2="307.5" />
+                            <rect x="495.2" y="0" width="7" height="7" />
+                        </g>
+
+                        <g class="range-exhibit__percentiles">
+                            <text x="99" y="335" text-anchor="middle">P10</text>
+                            <text x="462" y="335" text-anchor="middle">P90</text>
+                        </g>
+
+                        <g class="range-exhibit__ticks">
+                            <text x="0" y="359" text-anchor="middle">0</text>
+                            <text x="197.5" y="359" text-anchor="middle">15</text>
+                            <text x="395" y="359" text-anchor="middle">30</text>
+                            <text x="592.5" y="359" text-anchor="middle">45</text>
+                            <text x="790" y="359" text-anchor="middle">60</text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="range-exhibit__chart range-exhibit__chart--mobile">
+                    <svg viewBox="0 0 274 270" role="img" aria-labelledby="range-mobile-title range-mobile-description">
+                        <title id="range-mobile-title">
+                            Terminal monthly revenue distribution
+                        </title>
+
+                        <desc id="range-mobile-description">
+                            The model median is 16.4 thousand euros. The founder forecast
+                            sits at the 92nd percentile of the model.
+                        </desc>
+
+                        <g class="range-exhibit__model-label">
+                            <text x="75" y="12" text-anchor="end">Model median</text>
+                            <text x="75" y="27" text-anchor="end">€16.4k</text>
+                        </g>
+
+                        <g class="range-exhibit__founder-label">
+                            <text x="177" y="12">Founder forecast</text>
+                            <text x="177" y="27">92nd pct of the model</text>
+                        </g>
+
+                        <image href="assets/images/range-distribution-mobile.svg" x="0" y="49" width="274" height="186"
+                            preserveAspectRatio="none" />
+
+                        <line class="range-exhibit__baseline" x1="0" y1="235" x2="274" y2="235" />
+
+                        <line class="range-exhibit__median-line" x1="75" y1="13" x2="75" y2="235" />
+
+                        <g class="range-exhibit__founder-marker" aria-hidden="true">
+                            <line x1="171" y1="1" x2="171" y2="235" />
+                            <rect x="168" y="0" width="6" height="6" />
+                        </g>
+
+                        <g class="range-exhibit__ticks">
+                            <text x="0" y="254" text-anchor="start">0</text>
+                            <text x="91.3" y="254" text-anchor="middle">20</text>
+                            <text x="182.6" y="254" text-anchor="middle">40</text>
+                            <text x="274" y="254" text-anchor="end">60</text>
+                        </g>
+                    </svg>
+                </div>
+                <p class="range-exhibit__axis-caption">
+                    Terminal monthly revenue, € thousands · 10,000 runs
+                </p>
+            </div>
+
+            <footer class="site-closing">
+                <p class="site-closing__statement">
+                    underwrite what must be true.
+                </p>
+
+                <p class="site-closing__brand">
+                    brenwick
+                </p>
+            </footer>
+        </section>
+        <section class="range-section" aria-labelledby="range-section-title">
+            <header class="range-section__header">
+                <p class="range-section__figure-label">
+                    Exhibit 1 - The outcome range
+                </p>
+
+                <p class="range-section__figure-description">
+                    Future distribution exhibit with the founder's claim and central outcome marked.
+                </p>
+
+                <p class="range-section__specimen">
+                    SPECIMEN · Demo company
+                </p>
+            </header>
+
+            <div class="range-section__question">
+                <p>
+                    The range tells you how exposed the investment case is. The next question is what it is exposed to.
+                </p>
+            </div>
+
+            <div class="range-section__content">
+                <div class="range-section__heading-group">
+                    <p class="range-section__eyebrow">
+                        <span aria-hidden="true"></span>
+                        The dependencies
+                    </p>
+
+                    <h2 id="range-section-title">
+                        The outcome matters. What the outcome depends on is what you underwrite.
+                    </h2>
+                </div>
+
+                <div class="range-section__copy">
+                    <p>
+                        Brenwick identifies the assumptions that most clearly separate good futures from bad ones.
+                    </p>
+                    <p>
+                        Those are the questions diligence should press hardest: the customer that must sign, the funding
+                        date that cannot slip, or the hire whose timing the cash plan cannot absorb. The useful answer
+                        is not only a risk percentage. It is a short list of conditions carrying the investment case.
+                    </p>
+                </div>
+            </div>
+
+            <blockquote class="range-section__quote">
+                <p>“The founder already gave us <br class="mobile-line-break" /> a model.”</p>
+                <footer class="footer">
+                    That model is the claim under examination. Its inputs become useful when their uncertainty and
+                    influence are made explicit.
+                </footer>
+            </blockquote>
+        </section>
+        <section class="range-exhibit dependencies-exhibit" aria-labelledby="dependencies-exhibit-title">
+            <header class="range-exhibit__header">
+                <p>Exhibit 2</p>
+                <p>The dependencies</p>
+            </header>
+
+            <div class="range-exhibit__body">
+                <div class="range-exhibit__intro">
+                    <h2 id="dependencies-exhibit-title">What the case depends on</h2>
+                    <p>Share of outcome variance explained</p>
+                </div>
+
+                <div class="dependencies-exhibit__content">
+                    <ol class="dependencies-exhibit__ranking" aria-label="Share of outcome variance explained">
+                        <li class="dependencies-exhibit__item--31">
+                            <span class="dependencies-exhibit__factor">
+                                Sales cycle under 90 days
+                            </span>
+                            <span class="dependencies-exhibit__bar-line">
+                                <span class="dependencies-exhibit__bar"></span>
+                                <span class="dependencies-exhibit__value">31%</span>
+                            </span>
+                        </li>
+
+                        <li class="dependencies-exhibit__item--22">
+                            <span class="dependencies-exhibit__factor">
+                                Enterprise contract signs by Q2 27
+                            </span>
+                            <span class="dependencies-exhibit__bar-line">
+                                <span class="dependencies-exhibit__bar"></span>
+                                <span class="dependencies-exhibit__value">22%</span>
+                            </span>
+                        </li>
+
+                        <li class="dependencies-exhibit__item--15">
+                            <span class="dependencies-exhibit__factor">
+                                Series B closes on schedule
+                            </span>
+                            <span class="dependencies-exhibit__bar-line">
+                                <span class="dependencies-exhibit__bar"></span>
+                                <span class="dependencies-exhibit__value">15%</span>
+                            </span>
+                        </li>
+
+                        <li class="dependencies-exhibit__item--11">
+                            <span class="dependencies-exhibit__factor">
+                                Net revenue retention holds at 108%
+                            </span>
+                            <span class="dependencies-exhibit__bar-line">
+                                <span class="dependencies-exhibit__bar"></span>
+                                <span class="dependencies-exhibit__value">11%</span>
+                            </span>
+                        </li>
+
+                        <li class="dependencies-exhibit__item--7">
+                            <span class="dependencies-exhibit__factor">
+                                Second AE hired before Nov 26
+                            </span>
+                            <span class="dependencies-exhibit__bar-line">
+                                <span class="dependencies-exhibit__bar"></span>
+                                <span class="dependencies-exhibit__value">7%</span>
+                            </span>
+                        </li>
+
+                        <li class="dependencies-exhibit__item--5">
+                            <span class="dependencies-exhibit__factor">
+                                Gross margin holds above 71%
+                            </span>
+                            <span class="dependencies-exhibit__bar-line">
+                                <span class="dependencies-exhibit__bar"></span>
+                                <span class="dependencies-exhibit__value">5%</span>
+                            </span>
+                        </li>
+                    </ol>
+
+                    <figure class="dependencies-exhibit__effect">
+                        <figcaption>Observational effect · sales cycle</figcaption>
+
+                        <svg viewBox="0 0 330 245" role="img"
+                            aria-labelledby="dependencies-effect-title dependencies-effect-desc">
+                            <title id="dependencies-effect-title">
+                                Probability the plan holds by sales-cycle length
+                            </title>
+                            <desc id="dependencies-effect-desc">
+                                The probability falls as the sales cycle increases. At
+                                the assumed 90-day sales cycle, the probability is about
+                                28 percent.
+                            </desc>
+
+                            <g class="dependencies-exhibit__axis-labels">
+                                <text x="42" y="13">P(plan holds), %</text>
+
+                                <text x="31" y="35" text-anchor="end">60</text>
+                                <text x="31" y="95" text-anchor="end">40</text>
+                                <text x="31" y="155" text-anchor="end">20</text>
+                                <text x="31" y="215" text-anchor="end">0</text>
+
+                                <text x="42" y="235" text-anchor="middle">40</text>
+                                <text x="132" y="235" text-anchor="middle">70</text>
+                                <text x="222" y="235" text-anchor="middle">100</text>
+                                <text x="312" y="235" text-anchor="middle">130</text>
+
+                                <text x="312" y="244" text-anchor="end">
+                                    sales cycle, days
+                                </text>
+                            </g>
+
+                            <g class="dependencies-exhibit__axes" aria-hidden="true">
+                                <line x1="42" y1="23" x2="42" y2="215" />
+                                <line x1="42" y1="215" x2="320" y2="215" />
+                            </g>
+
+                            <g class="dependencies-exhibit__confidence" aria-hidden="true">
+                                <path d="M42 0 C82 13 112 43 151 75 C198 113 253 143 320 166" />
+                                <path d="M42 77 C88 91 121 120 163 148 C208 178 257 195 320 204" />
+                            </g>
+
+                            <path class="dependencies-exhibit__curve" aria-hidden="true"
+                                d="M42 36 C79 46 110 76 151 108 C198 145 249 173 320 190" />
+
+                            <g class="dependencies-exhibit__assumption" aria-hidden="true">
+                                <line x1="192" y1="140" x2="192" y2="215" />
+                                <rect x="188.5" y="136.5" width="7" height="7" />
+                                <text x="203" y="131">90 days assumed</text>
+                            </g>
+                        </svg>
+                    </figure>
+                </div>
+            </div>
+
+            <footer class="site-closing">
+                <p class="site-closing__statement">
+                    underwrite what must be true.
+                </p>
+
+                <p class="site-closing__brand">
+                    brenwick
+                </p>
+            </footer>
+        </section>
+        <section class="range-section" aria-labelledby="range-section-title">
+            <header class="range-section__header bg-change only-desktop">
+                <p class="range-section__figure-label">
+                    Exhibit 2 - Load-bearing assumptions
+                </p>
+
+                <p class="range-section__figure-description">
+                    Future ranked-driver exhibit followed by one observational effect curve.
+                </p>
+
+                <p class="range-section__specimen">
+                    SPECIMEN · Demo company
+                </p>
+            </header>
+
+            <div class="range-section__question bg-change only-desktop">
+                <p>
+                    A dependency is a place to investigate. Before calling it a response, we test whether changing it
+                    still matters when the surrounding future stays the same.
+                </p>
+            </div>
+
+            <div class="range-section__content">
+                <div class="range-section__heading-group">
+                    <p class="range-section__eyebrow">
+                        <span aria-hidden="true"></span>
+                        The decision test
+                    </p>
+
+                    <h2 id="range-section-title">
+                        A driver can travel with bad outcomes without causing them. We test the difference.
+                    </h2>
+                </div>
+
+                <div class="range-section__copy">
+                    <p>
+                        For assumptions that could change the decision, Brenwick tests realistic alternatives against
+                        the same uncertain background.
+                    </p>
+                    <p>
+                        The result shows whether an apparent driver survives intervention, where it helps, and where
+                        another dependency still dominates. When existing simulation cohorts already isolate the change
+                        reliably, we use them. Where dependence, sparse cohorts, or an exact decision would distort that
+                        reading, we compare paired model runs.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="range-exhibit decision-exhibit" aria-labelledby="decision-exhibit-title">
+            <header class="range-exhibit__header">
+                <p>Exhibit 3</p>
+                <p>The decision test</p>
+            </header>
+
+            <div class="range-exhibit__body">
+                <div class="range-exhibit__intro">
+                    <h2 id="decision-exhibit-title">
+                        Whether changing it changes the odds
+                    </h2>
+                    <p class="only-desktop">Effect on the modelled odds</p>
+                </div>
+
+                <div class="decision-exhibit__content">
+                    <div class="decision-exhibit__readings">
+                        <svg class="decision-exhibit__readings-chart decision-exhibit__readings-chart--desktop"
+                            viewBox="0 0 550 344" role="img"
+                            aria-labelledby="decision-readings-title decision-readings-description">
+                            <title id="decision-readings-title">
+                                Observational and counterfactual readings
+                            </title>
+                            <desc id="decision-readings-description">
+                                The observational reading changes the probability by
+                                14.2 percentage points. The counterfactual reading
+                                changes it by 3.6 percentage points.
+                            </desc>
+
+                            <text class="decision-exhibit__reading-label" x="0" y="52">
+                                Observational reading
+                            </text>
+
+                            <g class="decision-exhibit__interval decision-exhibit__interval--observational"
+                                aria-hidden="true">
+                                <line x1="295" y1="84" x2="437.4" y2="84" />
+                                <line x1="295" y1="76" x2="295" y2="92" />
+                                <line x1="437.4" y1="76" x2="437.4" y2="92" />
+                                <rect x="360.3" y="79" width="10" height="10" />
+                            </g>
+                            <text class="decision-exhibit__effect-value" x="448" y="88">
+                                +14.2 pp
+                            </text>
+
+                            <text
+                                class="decision-exhibit__reading-label decision-exhibit__reading-label--counterfactual"
+                                x="0" y="157">
+                                Counterfactual reading
+                            </text>
+
+                            <line class="decision-exhibit__zero-guide" x1="149.3" y1="162" x2="149.3" y2="284"
+                                aria-hidden="true" />
+
+                            <g class="decision-exhibit__interval decision-exhibit__interval--counterfactual"
+                                aria-hidden="true">
+                                <line x1="125" y1="188" x2="280" y2="188" />
+                                <line x1="125" y1="180" x2="125" y2="196" />
+                                <line x1="280" y1="180" x2="280" y2="196" />
+                                <rect x="197.5" y="183" width="10" height="10" />
+                            </g>
+                            <text class="decision-exhibit__effect-value decision-exhibit__effect-value--counterfactual"
+                                x="292" y="192">
+                                +3.6 pp
+                            </text>
+
+                            <g class="decision-exhibit__axis" aria-hidden="true">
+                                <line x1="56" y1="284" x2="546" y2="284" />
+                                <line x1="56" y1="284" x2="56" y2="290" />
+                                <line x1="149.3" y1="284" x2="149.3" y2="290" />
+                                <line x1="229" y1="284" x2="229" y2="290" />
+                                <line x1="308.3" y1="284" x2="308.3" y2="290" />
+                                <line x1="387.7" y1="284" x2="387.7" y2="290" />
+                                <line x1="467" y1="284" x2="467" y2="290" />
+                                <line x1="546" y1="284" x2="546" y2="290" />
+                            </g>
+
+                            <g class="decision-exhibit__axis-labels">
+                                <text x="56" y="311" text-anchor="middle">-5</text>
+                                <text x="149.3" y="311" text-anchor="middle">0</text>
+                                <text x="229" y="311" text-anchor="middle">+5</text>
+                                <text x="308.3" y="311" text-anchor="middle">+10</text>
+                                <text x="387.7" y="311" text-anchor="middle">+15</text>
+                                <text x="467" y="311" text-anchor="middle">+20</text>
+                                <text x="546" y="311" text-anchor="middle">+25</text>
+                            </g>
+
+                            <text class="decision-exhibit__axis-caption" x="0" y="340">
+                                Δ probability the plan holds, percentage points
+                            </text>
+                        </svg>
+
+                        <svg class="decision-exhibit__readings-chart decision-exhibit__readings-chart--mobile"
+                            viewBox="0 0 246 130" role="img"
+                            aria-label="Observational effect plus 14.2 percentage points; counterfactual effect plus 3.6 percentage points">
+                            <text class="decision-exhibit__reading-label" x="0" y="10">
+                                Observational reading
+                            </text>
+
+                            <g class="decision-exhibit__interval decision-exhibit__interval--observational"
+                                aria-hidden="true">
+                                <line x1="101" y1="27" x2="161" y2="27" />
+                                <line x1="101" y1="23" x2="101" y2="31" />
+                                <line x1="161" y1="23" x2="161" y2="31" />
+                                <rect x="128" y="24" width="6" height="6" />
+                            </g>
+                            <text class="decision-exhibit__effect-value" x="168" y="30">
+                                +14.2 pp
+                            </text>
+
+                            <text
+                                class="decision-exhibit__reading-label decision-exhibit__reading-label--counterfactual"
+                                x="0" y="49">
+                                Counterfactual reading
+                            </text>
+
+                            <line class="decision-exhibit__zero-guide" x1="40" y1="52" x2="40" y2="101"
+                                aria-hidden="true" />
+
+                            <g class="decision-exhibit__interval decision-exhibit__interval--counterfactual"
+                                aria-hidden="true">
+                                <line x1="31" y1="66" x2="101" y2="66" />
+                                <line x1="31" y1="62" x2="31" y2="70" />
+                                <line x1="101" y1="62" x2="101" y2="70" />
+                                <rect x="61" y="63" width="6" height="6" />
+                            </g>
+                            <text class="decision-exhibit__effect-value decision-exhibit__effect-value--counterfactual"
+                                x="109" y="69">
+                                +3.6 pp
+                            </text>
+
+                            <g class="decision-exhibit__axis" aria-hidden="true">
+                                <line x1="5" y1="101" x2="206" y2="101" />
+                                <line x1="5" y1="101" x2="5" y2="104" />
+                                <line x1="40" y1="101" x2="40" y2="104" />
+                                <line x1="107" y1="101" x2="107" y2="104" />
+                                <line x1="174" y1="101" x2="174" y2="104" />
+                            </g>
+
+                            <g class="decision-exhibit__axis-labels">
+                                <text x="5" y="114" text-anchor="middle">-5</text>
+                                <text x="40" y="114" text-anchor="middle">0</text>
+                                <text x="107" y="114" text-anchor="middle">+10</text>
+                                <text x="174" y="114" text-anchor="middle">+20</text>
+                            </g>
+
+                            <text class="decision-exhibit__axis-caption" x="0" y="128">
+                                Δ probability the plan holds, pts
+                            </text>
+                        </svg>
+                    </div>
+
+                    <figure class="decision-exhibit__paired-runs">
+                        <div class="decision-exhibit__paired-runs-header">
+                            <figcaption>Paired runs · baseline vs modified</figcaption>
+
+                            <div class="decision-exhibit__legend" aria-hidden="true">
+                                <span class="decision-exhibit__legend-item">
+                                    <span
+                                        class="decision-exhibit__legend-line decision-exhibit__legend-line--baseline"></span>
+                                    baseline
+                                </span>
+                                <span class="decision-exhibit__legend-item">
+                                    <span
+                                        class="decision-exhibit__legend-line decision-exhibit__legend-line--modified"></span>
+                                    modified
+                                </span>
+                            </div>
+                        </div>
+
+                        <svg class="decision-exhibit__paired-chart" viewBox="0 0 360 206" role="img"
+                            aria-labelledby="paired-runs-title paired-runs-description">
+                            <title id="paired-runs-title">
+                                Terminal revenue for baseline and modified paired runs
+                            </title>
+                            <desc id="paired-runs-description">
+                                Two closely aligned stepped distributions compare the
+                                baseline case with the modified case.
+                            </desc>
+
+                            <path class="decision-exhibit__paired-line decision-exhibit__paired-line--baseline"
+                                d="M0 180 H10 V177 H18 V160 H26 V126 H34 V92 H42 V58 H50 V34 H58 V19 H66 V12 H78 V11 H90 V18 H102 V29 H114 V42 H126 V55 H138 V68 H150 V82 H162 V94 H174 V106 H186 V116 H198 V126 H210 V135 H222 V143 H234 V149 H246 V155 H258 V160 H270 V164 H282 V168 H294 V171 H306 V174 H318 V176 H330 V178 H342 V179 H360 V180" />
+                            <path class="decision-exhibit__paired-line decision-exhibit__paired-line--modified"
+                                d="M0 180 H8 V175 H16 V150 H24 V108 H32 V72 H40 V39 H48 V16 H56 V7 H68 V5 H80 V12 H92 V22 H104 V34 H116 V47 H128 V61 H140 V75 H152 V89 H164 V101 H176 V112 H188 V122 H200 V132 H212 V141 H224 V148 H236 V154 H248 V160 H260 V164 H272 V168 H284 V171 H296 V174 H308 V176 H320 V177 H332 V179 H344 V179 H360 V180" />
+
+                            <text class="decision-exhibit__paired-axis-caption" x="0" y="204">
+                                terminal revenue, €k
+                            </text>
+                        </svg>
+                    </figure>
+                </div>
+            </div>
+            <footer class="site-closing">
+                <p class="site-closing__statement">
+                    underwrite what must be true.
+                </p>
+
+                <p class="site-closing__brand">
+                    brenwick
+                </p>
+            </footer>
+        </section>
+        <section class="range-section" aria-labelledby="range-section-title">
+            <header class="range-section__headertow">
+                <p class="range-section__figure-label">
+                    Exhibit 3 - Decision test
+                </p>
+
+                <p class="range-section__figure-descriptiontow">
+                    Future paired observational and counterfactual reading, shown only when decision-relevant.
+                </p>
+
+                <p class="range-section__specimen">
+                    SPECIMEN · Demo company
+                </p>
+            </header>
+
+            <div class="range-section__question">
+                <p>
+                    Calculation can expose the consequence. Judgment is still required to choose the test, ground the
+                    assumptions, and decide what the result means.
+                </p>
+            </div>
+        </section>
+
+        <section class="judgment-section" aria-labelledby="independent-judgment-title">
+            <div class="judgment-section__intro">
+                <div class="judgment-section__heading">
+                    <p class="judgment-section__eyebrow">
+                        <span aria-hidden="true"></span>
+                        Independent judgment
+                    </p>
+
+                    <h2 id="independent-judgment-title">
+                        <span class="judgment-section__title-accessible">
+                            The model is the instrument. The opinion is human.
+                        </span>
+                        <span class="judgment-section__title judgment-section__title--desktop" aria-hidden="true">
+                            The model is the instrument.<br />
+                            The opinion is human.
+                        </span>
+                        <span class="judgment-section__title judgment-section__title--mobile" aria-hidden="true">
+                            The model is the<br />
+                            instrument. The<br />
+                            opinion is human.
+                        </span>
+                    </h2>
+                </div>
+
+                <img class="judgment-section__arrow" src="assets/icons/hero-arrow.svg" alt="" width="52" height="50"
+                    aria-hidden="true" />
+                <div class="judgment-section__copy">
+                    <p>
+                        Brenwick works through the assumptions in working sessions
+                        with the founding team, tests the dependencies that matter,
+                        and signs an independent reading for the investor.
+                    </p>
+
+                    <p>
+                        We challenge and re-estimate key assumptions using available
+                        evidence, benchmarks where available, and explicit uncertainty
+                        ranges. If there is no usable model, we reconstruct the
+                        relevant mechanics from the deck and the sessions. If the team
+                        will not participate, we decline the engagement.
+                    </p>
+                </div>
+            </div>
+
+            <ol class="judgment-section__steps">
+                <li class="judgment-section__step">
+                    <span class="judgment-section__number" aria-hidden="true">01</span>
+                    <h3>Deconstruct</h3>
+                    <p>the plan into its economic drivers</p>
+                </li>
+
+                <li class="judgment-section__step">
+                    <span class="judgment-section__number" aria-hidden="true">02</span>
+                    <h3>Ground</h3>
+                    <p>the key assumptions with the founding team.</p>
+                </li>
+
+                <li class="judgment-section__step">
+                    <span class="judgment-section__number" aria-hidden="true">03</span>
+                    <h3>Simulate</h3>
+                    <p>the plausible outcome range.</p>
+                </li>
+
+                <li class="judgment-section__step">
+                    <span class="judgment-section__number" aria-hidden="true">04</span>
+                    <h3>Diagnose</h3>
+                    <p>the load-bearing dependencies.</p>
+                </li>
+
+                <li class="judgment-section__step">
+                    <span class="judgment-section__number" aria-hidden="true">05</span>
+                    <h3>Test and sign</h3>
+                    <p>the decision-relevant alternatives and opinion.</p>
+                </li>
+            </ol>
+
+            <div class="judgment-section__questions">
+                <article class="judgment-section__question">
+                    <h3>“Why trust your assumptions?”</h3>
+                    <p>
+                        You do not have to. The assumptions, ranges, and evidence are
+                        explicit enough to challenge.
+                    </p>
+                </article>
+
+                <article class="judgment-section__question">
+                    <h3>“Will this damage the founder relationship?”</h3>
+                    <p>
+                        The examination concerns the plan and its assumptions, not the
+                        founder’s character. The working sessions give the team a
+                        sharper model as well.
+                    </p>
+                </article>
+            </div>
+
+            <p class="judgment-section__signature">
+                Every engagement is led and signed by&nbsp;Henning Lategahn.
+            </p>
+        </section>
+
+        <section class="use-cases-section" id="when-to-use-brenwick" aria-labelledby="when-to-use-brenwick-title">
+            <div class="use-cases-section__inner">
+                <div class="use-cases-section__introduction">
+                    <p class="use-cases-section__eyebrow">
+                        <span aria-hidden="true"></span>
+                        When to use Brenwick
+                    </p>
+
+                    <h2 id="when-to-use-brenwick-title">
+                        <span class="use-cases-section__title use-cases-section__title--desktop">
+                            Use it when a company<br />
+                            plan becomes<br />
+                            consequential.
+                        </span>
+                        <span class="use-cases-section__title use-cases-section__title--mobile">
+                            Use it when a<br />
+                            company plan<br />
+                            becomes<br />
+                            consequential.
+                        </span>
+                    </h2>
+
+                    <p class="use-cases-section__description">
+                        Brenwick examines the company whose assumptions matter now.
+                        Repeat use means a series of bounded examinations, not
+                        continuous portfolio monitoring.
+                    </p>
+
+                    <p class="use-cases-section__prompt">
+                        Bring the company and the decision. We will identify what must
+                        be true.
+                    </p>
+                </div>
+
+                <div class="use-cases-section__cases">
+                    <article class="use-case use-case--new-investment">
+                        <div class="use-case__header">
+                            <span class="use-case__icon use-case__icon--light" aria-hidden="true">
+                                <img src="assets/icons/new-investment.svg" alt="" width="33" height="33" />
+                            </span>
+
+                            <div class="use-case__heading">
+                                <p class="use-case__label">New investment</p>
+                                <h3>Before capital follows the plan.</h3>
+                            </div>
+                        </div>
+
+                        <p class="use-case__description">
+                            Examine whether to invest, what evidence is still missing,
+                            and which conditions the investment thesis requires.
+                        </p>
+                    </article>
+
+                    <article class="use-case use-case--existing-portfolio">
+                        <div class="use-case__header">
+                            <span class="use-case__icon use-case__icon--navy" aria-hidden="true">
+                                <img src="assets/icons/existing-portfolio.svg" alt="" width="30" height="30" />
+                            </span>
+
+                            <div class="use-case__heading">
+                                <p class="use-case__label">Existing portfolio</p>
+                                <h3>Before the company is underwritten again.</h3>
+                            </div>
+                        </div>
+
+                        <p class="use-case__description">
+                            Use a point-in-time examination before a follow-on, bridge,
+                            reserve allocation, material plan reset, or board decision
+                            tied to the forecast.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="bounded-engagement" id="bounded-engagement" aria-labelledby="bounded-engagement-title">
+            <div class="bounded-engagement__heading">
+                <p class="bounded-engagement__eyebrow">
+                    <span aria-hidden="true"></span>
+                    The bounded engagement
+                </p>
+
+                <h2 id="bounded-engagement-title">
+                    <span class="bounded-engagement__title-accessible">
+                        One company. One examination. One signed opinion.
+                    </span>
+                    <span class="bounded-engagement__title bounded-engagement__title--desktop" aria-hidden="true">
+                        One company. One examination.<br />
+                        One signed opinion.
+                    </span>
+                    <span class="bounded-engagement__title bounded-engagement__title--mobile" aria-hidden="true">
+                        One company. One<br />
+                        examination. One<br />
+                        signed opinion.
+                    </span>
+                </h2>
+            </div>
+
+            <svg class="bounded-engagement__arrow" width="65" height="64" viewBox="0 0 65 64" fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path
+                    d="M0.992959 17.9574C1.2385 19.6993 3.92905 22.0386 5.08052 23.2713C7.19193 25.4776 9.46559 27.5238 11.9669 29.2817C16.1672 32.3083 20.8566 34.5327 25.7105 36.2749C35.8375 39.73 46.6317 39.9672 57.2096 38.8815C53.5501 36.8577 49.859 34.737 46.2648 32.5847C45.3026 31.9334 45.7129 28.5848 44.9422 28.1926C50.5622 30.9714 56.0831 34.1041 61.4418 37.3967C61.8271 37.5927 63.0235 41.5972 62.7643 41.7888C57.2205 46.487 51.5145 51.3453 44.6322 53.9071C44.6322 53.9071 43.936 52.0975 44.0013 51.9691C47.9541 48.9677 52.0353 46.0316 55.7312 42.8994C42.8952 44.2914 29.4375 42.4564 18.1073 35.9636C11.0135 31.9498 1.29909 24.8237 0.265177 16.0509C0.267445 15.7286 0.93214 17.4413 0.992959 17.9574Z"
+                    fill="#A35139" />
+            </svg>
+
+            <div class="bounded-engagement__copy">
+                <p>
+                    Brenwick examines the company whose assumptions matter now. Repeat
+                    use means a series of bounded examinations, not continuous
+                    portfolio monitoring.
+                </p>
+
+                <p>
+                    We take at most two engagements at a time. Our fee is fixed at
+                    engagement start and owed on delivery, whatever the report says.
+                    The engagement ends with the report.
+                </p>
+            </div>
+
+            <blockquote class="bounded-engagement__question">
+                <p class="bounded-engagement__question-title">
+                    “Will this slow the deal?”
+                </p>
+                <p class="bounded-engagement__question-answer">
+                    No. The delivery window sits inside a standard diligence process,
+                    and the quoted clock is protected by the two-engagement capacity
+                    limit.
+                </p>
+            </blockquote>
+
+            <div class="bounded-engagement__actions">
+                <a class="bounded-engagement__button bounded-engagement__button--primary" href="#contact">
+                    Book a confidential diligence call
+                </a>
+                <a class="bounded-engagement__button bounded-engagement__button--secondary" href="#sample-report">
+                    Request the sample report
+                </a>
+            </div>
+        </section>
+        <section class="sample-report" id="sample-report" aria-labelledby="sample-report-title">
+            <div class="sample-report__introduction">
+                <p class="sample-report__eyebrow">
+                    <span aria-hidden="true"></span>
+                    The sample report
+                </p>
+
+                <h2 id="sample-report-title">
+                    <span class="sample-report__title-accessible">
+                        The model as pitched, and the same model examined.
+                    </span>
+                    <span class="sample-report__title--desktop" aria-hidden="true">
+                        The model as pitched,<br />
+                        and the same model<br />
+                        examined.
+                    </span>
+                    <span class="sample-report__title--mobile" aria-hidden="true">
+                        The model as<br />
+                        pitched, and the<br />
+                        same model<br />
+                        examined.
+                    </span>
+                </h2>
+
+                <p class="sample-report__description">
+                    The pair contains a forecast report and a forensic report for the
+                    demo company: the plausible range, ranked dependencies, decision
+                    tests, and named conditions carrying the case. Inspect the
+                    deliverable before any engagement.
+                </p>
+            </div>
+
+            <div class="sample-report__request">
+                <form class="sample-report__form" action="#" method="post">
+                    <label class="sample-report__label" for="sample-report-email">
+                        Work email
+                    </label>
+
+                    <input class="sample-report__input" id="sample-report-email" name="email" type="email"
+                        placeholder="you@fund.com" autocomplete="email" required />
+
+                    <button class="sample-report__button" type="submit">
+                        Request the sample report
+                    </button>
+
+                    <p class="sample-report__privacy">
+                        No newsletter, list, or phone field. Prefer email?<br class="sample-report__privacy-break" />
+                        <a href="#contact">Contact Brenwick.</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <footer class="brenwick-footer" aria-label="Site footer">
+            <div class="brenwick-footer__main">
+                <div class="brenwick-footer__brand">
+                    <a class="brenwick-footer__logo" href="#home" aria-label="Brenwick home">
+                        <img src="assets/icons/brenwick-logo.svg" alt="Brenwick" width="124" height="25" />
+                    </a>
+
+                    <p class="brenwick-footer__disclaimer">
+                        Any engagement provides an independent analytical opinion on
+                        the plausibility of a forecast,<br class="brenwick-footer__desktop-break" />
+                        for the client's own investment decision. It is explicitly not
+                        a statutory or financial audit, not<br class="brenwick-footer__desktop-break" />
+                        regulated investment advice or a recommendation to invest or
+                        not invest, not a valuation or<br class="brenwick-footer__desktop-break" />
+                        a fairness opinion, and not a guarantee or assurance about
+                        outcomes.
+                    </p>
+                </div>
+
+                <nav class="brenwick-footer__navigation" aria-label="Footer navigation">
+                    <a href="#who-signs">Who Signs</a>
+                    <a href="research/">Research</a>
+                    <a href="#impressum">Impressum</a>
+                    <a href="#datenschutz">Datenschutz</a>
+                </nav>
+            </div>
+
+            <div class="brenwick-footer__bottom">
+                <p class="brenwick-footer__copyright">
+                    Copyright 2026 brenwick. All Right<span class="brenwick-footer__mobile-break"><br /></span>
+                    Reserved
+                </p>
+
+                <p class="brenwick-footer__signature">
+                    Independent · Human-led · Signed
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
