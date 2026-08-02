@@ -108,22 +108,22 @@
     position: relative;
     height: 1258px;
     padding: 110px 116px 130px;
-    overflow: visible;
     background-color: var(--research-panel);
     background-image: url("../assets/icons/use-cases-grid.svg");
     background-position: top center;
     background-repeat: repeat-y;
     background-size: 1440px 690px;
 }
+
 .research-library::before,
 .research-library::after {
     content: "";
     position: absolute;
     left: 50%;
     z-index: 2;
-    width: min(1440px, 100vw) !important;
+    width: 100vw;
     height: 1.19px;
-    background-color: #EAE4DD;
+    background-color: var(--research-border);
     transform: translateX(-50%);
     pointer-events: none;
 }
@@ -135,6 +135,7 @@
 .research-library::after {
     bottom: 0;
 }
+
 .research-library__grid {
     display: grid;
     width: 1048px;
@@ -215,7 +216,7 @@
     top: 114px;
     right: 30px;
     left: 30px;
-    margin: 0 !important;
+    margin: 0;
     padding-top: 28px;
     border-top: 1px solid var(--research-border);
     color: var(--research-copy);
@@ -368,7 +369,9 @@
         background-image:
             linear-gradient(var(--research-border) 1px, transparent 1px),
             linear-gradient(90deg, var(--research-border) 1px, transparent 1px);
-        background-position: 0 -7px, 18px 0;
+        background-position:
+            0 -7px,
+            18px 0;
         background-repeat: repeat;
         background-size: 116.42px 116.42px;
     }

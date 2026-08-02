@@ -11,13 +11,15 @@
 
 .who-signs__pattern {
     position: absolute;
-    inset: 0;
+    top: 25px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-image: url("../assets/icons/dots-pattern.svg");
     background-position: top center;
     background-repeat: repeat-y;
     background-size: 1222px 437px;
     pointer-events: none;
-    top: 25px;
 }
 
 .who-signs__arrow {
@@ -37,9 +39,6 @@
 .who-signs__introduction {
     position: relative;
     height: 410px;
-    background-position: top -4px center;
-    background-repeat: repeat-y;
-    background-size: 1222px 421px;
 }
 
 .who-signs__eyebrow {
@@ -73,21 +72,14 @@
     line-height: 1.2;
 }
 
-.who-signs__arrow {
-    position: absolute;
-    display: block;
-    pointer-events: none;
-}
-
-
 .who-signs__introduction-copy p {
     position: absolute;
+    max-width: 541px;
     color: var(--color-text);
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1.5;
-    max-width: 541px;
 }
 
 .who-signs__introduction-copy--founder {
@@ -103,10 +95,10 @@
 }
 
 .who-signs__profile {
-    display: grid;
     position: relative;
-    overflow: visible;
+    display: grid;
     height: 797px;
+    overflow: visible;
     grid-template-columns: var(--who-signs-left-column) minmax(0, 1fr);
 }
 
@@ -116,9 +108,9 @@
     top: 0;
     left: 50%;
     z-index: 20;
-    width: min(1440px, 100vw);
+    width: 100vw;
     height: 1.19px;
-    background-color: #EAE4DD;
+    background-color: #eae4dd;
     transform: translateX(-50%);
     pointer-events: none;
 }
@@ -345,24 +337,25 @@
         aspect-ratio: 601 / 627;
     }
 }
+
 @media (max-width: 767px) {
     .who-signs {
         width: calc(100% - 32px);
     }
-    .who-signs__introduction {
-        position: relative;
-        height: 504px;
-        overflow: hidden;
-        isolation: isolate;
-    }
 
     .who-signs__pattern {
-        position: absolute;
         inset: 0;
         z-index: 0;
         height: 100%;
         background-position: 9px 21px;
-        pointer-events: none;
+    }
+
+    .who-signs__introduction {
+        position: relative;
+        height: 504px;
+        z-index: 4;
+        overflow: hidden;
+        isolation: isolate;
     }
 
     .who-signs__eyebrow,
@@ -370,53 +363,6 @@
     .who-signs__arrow,
     .who-signs__introduction-copy p {
         z-index: 1;
-    }
-
-    .who-signs__profile {
-        position: relative;
-        z-index: 1;
-        display: flex;
-        height: auto;
-        flex-direction: column;
-        padding-bottom: 48px;
-        background-color: var(--color-background);
-    }
-
-    .who-signs__profile-details {
-        width: 100%;
-        border-right: 0;
-    }
-    .who-signs__profile-heading {
-        box-sizing: border-box;
-        width: 100%;
-        height: 105px;
-        padding: 35px 13px 0;
-        border-bottom: 1.19px solid var(--color-border);
-    }
-
-    .who-signs__biography {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: none;
-        height: auto;
-        min-height: 460px;
-        padding: 20px 11px 34px;
-        border-top: 0;
-    }
-}
-@media (max-width: 767px) {
-    .who-signs {
-        width: calc(100% - 32px);
-    }
-
-    .who-signs__pattern {
-        height: 506px;
-        background-position: 9px 21px;
-    }
-
-    .who-signs__introduction {
-        height: 504px;
-        z-index: 4;
     }
 
     .who-signs__eyebrow {
@@ -463,19 +409,26 @@
     }
 
     .who-signs__profile {
+        position: relative;
+        z-index: 1;
         display: flex;
         height: auto;
         flex-direction: column;
         padding-bottom: 48px;
+        background-color: var(--color-background);
     }
 
     .who-signs__profile-details {
+        width: 100%;
         border-right: 0;
     }
 
     .who-signs__profile-heading {
+        box-sizing: border-box;
+        width: 100%;
         height: 105px;
         padding: 35px 13px 0;
+        border-bottom: 1.19px solid var(--color-border);
     }
 
     .who-signs__profile-heading h2 {
@@ -499,10 +452,13 @@
     }
 
     .who-signs__biography {
-        height: 399px;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
         min-height: 460px;
         padding: 20px 11px 34px;
         max-width: 307px;
+        border-top: 0;
     }
 
     .who-signs__biography>p {

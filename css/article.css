@@ -27,16 +27,15 @@
     font-weight: 500;
 }
 
-
 .article-hero::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     z-index: 20;
-    width: min(1440px, 100vw);
+    width: 100vw;
     height: 1.19px;
-    background-color: #EAE4DD;
+    background-color: var(--article-border);
     transform: translateX(-50%);
     pointer-events: none;
 }
@@ -158,11 +157,6 @@
 
 .article-hero__arrow {
     position: absolute;
-    display: block;
-    pointer-events: none;
-}
-.who-signs__arrow {
-    position: absolute;
     top: 216px;
     left: 42.75%;
     display: block;
@@ -170,6 +164,7 @@
     height: 64px;
     pointer-events: none;
 }
+
 .article-media {
     position: relative;
     aspect-ratio: 1280 / 625;
@@ -205,7 +200,7 @@
 
 .article-introduction p {
     max-width: 1174px;
-    margin-top: 6px !important;
+    margin-top: 6px;
     color: var(--article-copy);
     font-size: 16px;
     letter-spacing: 0;
@@ -270,6 +265,7 @@
         width: 49%;
         font-size: clamp(44px, 5.35vw, 58px);
     }
+
     .article-hero__description {
         right: 42px;
         left: auto;
@@ -277,8 +273,9 @@
         font-size: clamp(14px, 1.45vw, 16px);
     }
 }
+
 @media (max-width: 1100px) {
-    .who-signs__arrow {
+    .article-hero__arrow {
         top: 112px;
         right: 55px;
         left: auto;
@@ -288,6 +285,7 @@
         transform-origin: center;
     }
 }
+
 @media (max-width: 767px) {
     .article-page {
         --header-height: 56px;
@@ -349,7 +347,6 @@
         line-height: 1.5;
     }
 
-
     .article-media {
         aspect-ratio: 343 / 395;
     }
@@ -371,7 +368,7 @@
 
     .article-introduction p {
         max-width: 296px;
-        margin-top: 8px !important;
+        margin-top: 8px;
         font-size: 14px;
         line-height: 1.5;
     }
@@ -434,7 +431,7 @@
 
     .article-page .brenwick-footer__disclaimer {
         max-width: 277px;
-        margin-top: 30px !important;
+        margin-top: 30px;
         font-size: 13px;
         line-height: 1.5;
     }
@@ -464,7 +461,6 @@
         right: 14px;
         font-size: clamp(12px, 3.733vw, 14px);
     }
-
 
     .article-introduction,
     .article-content {
