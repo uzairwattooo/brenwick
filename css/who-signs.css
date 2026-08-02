@@ -2,11 +2,32 @@
     --who-signs-left-column: 678px;
     width: min(calc(100% - 160px), 1280px);
     margin-inline: auto;
-    overflow: hidden;
     border-right: 1.19px solid var(--color-border);
     border-left: 1.19px solid var(--color-border);
     background-color: var(--color-background);
     color: var(--color-heading);
+    overflow: visible;
+}
+
+.who-signs__pattern {
+    position: absolute;
+    inset: 0;
+    background-image: url("../assets/icons/dots-pattern.svg");
+    background-position: top center;
+    background-repeat: repeat-y;
+    background-size: 1222px 437px;
+    pointer-events: none;
+    top: 25px;
+}
+
+.who-signs__arrow {
+    position: absolute;
+    top: 216px;
+    left: 42.75%;
+    display: block;
+    width: 65px;
+    height: 64px;
+    pointer-events: none;
 }
 
 .who-signs :where(h1, h2, p, figure) {
@@ -16,8 +37,6 @@
 .who-signs__introduction {
     position: relative;
     height: 410px;
-    border-bottom: 1.19px solid var(--color-border);
-    background-image: url("../assets/icons/bg-image.svg");
     background-position: top -4px center;
     background-repeat: repeat-y;
     background-size: 1222px 421px;
@@ -60,18 +79,6 @@
     pointer-events: none;
 }
 
-.who-signs__arrow--desktop {
-    top: 206px;
-    left: 540px;
-    width: 52.017px;
-    height: 49.764px;
-    transform: rotate(18.03deg);
-    transform-origin: center;
-}
-
-.who-signs__arrow--mobile {
-    display: none;
-}
 
 .who-signs__introduction-copy p {
     position: absolute;
@@ -80,6 +87,7 @@
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1.5;
+    max-width: 541px;
 }
 
 .who-signs__introduction-copy--founder {
@@ -91,13 +99,28 @@
 .who-signs__introduction-copy--investor {
     top: 193px;
     left: 677px;
-    width: 522px;
+    max-width: 551px;
 }
 
 .who-signs__profile {
     display: grid;
+    position: relative;
+    overflow: visible;
     height: 797px;
     grid-template-columns: var(--who-signs-left-column) minmax(0, 1fr);
+}
+
+.who-signs__profile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 20;
+    width: min(1440px, 100vw);
+    height: 1.19px;
+    background-color: #EAE4DD;
+    transform: translateX(-50%);
+    pointer-events: none;
 }
 
 .who-signs__profile-details {
@@ -165,7 +188,7 @@
     border-top: 1.19px solid var(--color-border);
 }
 
-.who-signs__biography > p {
+.who-signs__biography>p {
     max-width: 592px;
     color: var(--color-text);
     font-size: 16px;
@@ -211,7 +234,7 @@
 }
 
 .who-signs__button--secondary {
-    width: 204.759px;
+    width: 207.759px;
     border-color: var(--color-border);
     background-color: transparent;
     color: var(--color-text);
@@ -238,13 +261,11 @@
     top: 0;
     bottom: 0;
     width: 76px;
-    background-image: repeating-linear-gradient(
-        90deg,
-        transparent 0,
-        transparent 17px,
-        rgb(255 255 255 / 20%) 17px,
-        rgb(255 255 255 / 20%) 18px
-    );
+    background-image: repeating-linear-gradient(90deg,
+            transparent 0,
+            transparent 17px,
+            rgb(255 255 255 / 20%) 17px,
+            rgb(255 255 255 / 20%) 18px);
     content: "";
     pointer-events: none;
 }
@@ -279,7 +300,7 @@
     height: auto;
 }
 
-.who-signs + .brenwick-footer {
+.who-signs+.brenwick-footer {
     margin-top: 0;
 }
 
@@ -291,10 +312,6 @@
 
     .who-signs__title {
         font-size: clamp(44px, 4.69vw, 60px);
-    }
-
-    .who-signs__arrow--desktop {
-        left: 47%;
     }
 
     .who-signs__introduction-copy--founder {
@@ -314,7 +331,7 @@
         padding-left: clamp(28px, 3.28vw, 42px);
     }
 
-    .who-signs__biography > p {
+    .who-signs__biography>p {
         font-size: clamp(13px, 1.25vw, 16px);
     }
 
@@ -334,14 +351,14 @@
         width: calc(100% - 32px);
     }
 
-    .who-signs__introduction {
+    .who-signs__pattern {
         height: 506px;
         background-position: 9px 21px;
     }
 
     .who-signs__eyebrow {
         top: 27px;
-        left: 13px;
+        left: 14px;
         gap: 6px;
         font-size: 12px;
         line-height: 1.5;
@@ -357,31 +374,20 @@
         top: 64px;
         right: 13px;
         left: 13px;
-        font-size: 32px;
+        font-size: 36px;
         line-height: 1.2;
+        max-width: 305px;
     }
 
     .who-signs__desktop-break {
         display: none;
     }
 
-    .who-signs__arrow--desktop {
-        display: none;
-    }
-
-    .who-signs__arrow--mobile {
-        top: 127px;
-        right: 8px;
-        display: block;
-        width: 32px;
-        height: 43px;
-    }
-
     .who-signs__introduction-copy p {
         right: 12px;
         left: 13px;
-        width: auto;
-        font-size: 13px;
+        max-width: 305px;
+        font-size: 14px;
         line-height: 1.5;
     }
 
@@ -415,7 +421,7 @@
 
     .who-signs__profile-heading p {
         margin-top: 2px;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .who-signs__linkedin {
@@ -431,13 +437,14 @@
 
     .who-signs__biography {
         height: 399px;
-        min-height: 399px;
+        min-height: 460px;
         padding: 20px 11px 34px;
+        max-width: 307px;
     }
 
-    .who-signs__biography > p {
+    .who-signs__biography>p {
         max-width: none;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 1.5;
     }
 
@@ -489,7 +496,7 @@
     }
 
     .who-signs__introduction-copy p,
-    .who-signs__biography > p {
+    .who-signs__biography>p {
         font-size: 12px;
     }
 
@@ -503,8 +510,21 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     .who-signs__linkedin,
     .who-signs__button {
         transition: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .who-signs__arrow {
+        top: 135px;
+        right: 14px;
+        left: auto;
+        width: 42px;
+        height: 42px;
+        transform: rotate(-34deg) scaleX(-1);
+        transform-origin: center;
     }
 }
